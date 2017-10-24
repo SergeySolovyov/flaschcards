@@ -5,10 +5,11 @@
  
 <p>
   <strong>Translate:</strong>
-  <%= @article.translated_text %>
+  <%= @card.translated_text %>
 </p>
 
 <p>
   <strong>Date:</strong>
-  <%= @article.review_date %>
+  <%= @card.review_date.strftime("%d.%m.%Y") %>
 </p>
+<%= link_to 'К карточкам', cards_path %>
